@@ -21,7 +21,7 @@ function App() {
                 body : JSON.stringify({text : providedText})
                 
             })
-            console.log(res)
+            
             const responseData = await res.json()
             setData(responseData.text)
 
@@ -38,16 +38,16 @@ function App() {
   return (
     <div className='app'>
       <div className="textContainers">
-        <div className="english">
-            <h2>English</h2>
-            <textarea type="text" name="text" id="text" onChange={handleChange} value={providedText}/>
-        </div>
+            <div className="english">
+                <h2>English</h2>
+                <textarea type="text" name="text" id="text" onChange={handleChange} value={providedText}/>
+            </div>
             
             <div className="french">
                 <h2>French</h2>
                 <textarea type="text" value={data} />
             </div>
-      </div>
+        </div>
       
       <div className="buttonContainer">
         <button onClick={handleTranslate}>Translate</button>
