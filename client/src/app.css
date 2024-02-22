@@ -1,0 +1,122 @@
+.app{
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+    margin-top: 3vw;
+    border: 4px solid  rgb(75, 151, 218);
+    background-color: rgb(123, 177, 225);
+}
+.textContainers{
+    height: 75%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    
+}
+.english{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+.english textarea{
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    color: rgb(101, 100, 100);
+
+}
+.french{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+   
+    
+   
+   
+}
+.french textarea{
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    color: rgb(103, 99, 99);
+   
+}
+.buttonContainer{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonContainer button{
+    padding: 12px 10px;
+    width: 20%;
+    font-size: 15px;
+    font-weight: bolder;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    background-color: rgb(192, 188, 188);
+}
+
+@media screen and (max-width : 600px) {
+    
+    .textContainers{
+        
+        height: 90%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .english{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column
+    }
+    .english input{
+        height: 80%;
+    }
+    .french{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column
+    }
+    .buttonContainer{
+       padding: 0;
+    }
+    .buttonContainer button{
+        width: 40vw;
+    }
+}
+
